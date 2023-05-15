@@ -1,0 +1,24 @@
+header{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    nav{
+        ul{
+            padding-left: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 40px;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    background-color: rgb(233, 195, 174);
+                    color: rgb(93, 38, 40);
+                    padding: 10px 12px 12px 13px;
+                    border-radius: 10px;
+                }  
+            }
+        }
+    }
+}

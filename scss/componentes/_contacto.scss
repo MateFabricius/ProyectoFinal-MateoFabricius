@@ -1,0 +1,51 @@
+#main_contacto{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.3fr 0,5fr 1.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "h1c h1c"
+      "hora hora"
+      'lugar lugar'
+      'tel tel'
+      'mail mail'; 
+    .caja_h1c{
+        grid-area: h1c;
+        background-color: rgb(247, 232, 217);
+        border-bottom: solid 2px rgb(93, 38, 40);
+        display: flex;
+        justify-content: center;
+        h1{
+            text-align: center;
+            background-color: rgb(233, 195, 174);
+            border: dashed 3px rgb(93, 38, 40);
+            padding: 10px;
+            width: 65%;
+        }
+    }
+    h2{
+        text-decoration: underline;
+    }
+    .caja_hora{
+        grid-area: hora;
+        text-align: center;
+    }
+    
+    .caja_lugar{
+        grid-area: lugar;
+        text-align: center;
+    }
+    
+    .caja_tel{
+        grid-area: tel;
+        text-align: center;
+    }
+    
+    .caja_mail{
+        grid-area: mail;
+        text-align: center;
+        ul{
+           list-style: none;
+        }
+    }
+}

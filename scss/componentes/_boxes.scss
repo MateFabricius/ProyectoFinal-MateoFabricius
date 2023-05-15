@@ -1,0 +1,97 @@
+#main_boxes{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.3fr 1.5fr 1.5fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "h1b h1b"
+      "b1 b2"
+      "b1 b2"
+      "h3b h3b"; 
+      .caja_h1b{
+        grid-area: h1b;
+        background-color: rgb(247, 232, 217);
+        border-bottom: solid 2px rgb(93, 38, 40);
+        display: flex;
+        justify-content: center;
+        h1{
+            text-align: center;
+            background-color: rgb(233, 195, 174);
+            border: dashed 3px rgb(93, 38, 40);
+            padding: 10px;
+            width: 65%;
+        }
+    }
+    .box1{
+        grid-area: b1;
+        justify-self: end;
+        margin-top: 25px;
+        margin-right: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 2px rgb(93, 38, 40);
+        width: 60%;
+    }
+    .box2{
+        grid-area: b2;
+        justify-self: start;
+        margin-top: 25px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 2px rgb(93, 38, 40);
+        width: 60%;
+        p{
+            width: 500px;
+            text-align: center;
+        }
+    }
+    div h2{
+        text-decoration: underline;
+    }
+    h3{
+        grid-area: h3b;
+        justify-self: center;
+        align-self: center;
+        background-color: rgb(233, 195, 174);
+        text-align: center;
+        border: dashed rgb(93, 38, 40);
+        padding: 10px;
+        width: 800px;
+    }
+}
+
+/*Vista Mobile Boxes*/
+
+@media (max-width: 576px){
+
+    #main_boxes{
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto 1fr 1fr auto;  
+        grid-template-areas: 
+        "h1b"
+        "b1"
+        "b2"
+        "h3b";
+        background-color: rgb(247, 232, 217);
+        .caja_h1b{
+            height: fit-content;
+        }
+        .box1{
+            justify-self: center;
+            align-self: center;
+            margin-right: 0px;
+            width: auto;
+        }
+        .box2{
+            justify-self: center;
+            width: auto;
+            margin-left: 0;
+        }
+        h3{
+            width: 65%;
+        }
+    }
+}

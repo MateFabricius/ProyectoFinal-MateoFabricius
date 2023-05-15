@@ -1,0 +1,51 @@
+#main_talleres{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.3fr 1.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "h1t h1t"
+      "txttall txttall"; 
+    .caja_h1t{
+        grid-area: h1t;
+        background-color: rgb(247, 232, 217);
+        border-bottom: solid 2px rgb(93, 38, 40);
+        display: flex;
+        justify-content: center;
+        h1{
+            text-align: center;
+            background-color: rgb(233, 195, 174);
+            border: dashed 3px rgb(93, 38, 40);
+            padding: 10px;
+            width: 65%;
+        }
+    }
+    .caja_txt_tall{
+        grid-area: txttall;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 30px;
+        h2{
+            text-decoration: none;
+            text-align: center;
+            background-color: rgb(233, 195, 174);
+            border: solid 2px rgb(93, 38, 40);
+            padding: 10px 180px 10px 180px;
+        }
+        a{
+            text-decoration: none;
+            background-color: rgb(233, 195, 174);
+            color: rgb(93, 38, 40);
+            padding: 10px 12px 12px 13px;
+            border-radius: 10px;
+            margin: 15px;
+        }
+        img{
+            margin: 10px;
+            border: solid 2px rgb(93, 38, 40);
+        }
+    }
+}
