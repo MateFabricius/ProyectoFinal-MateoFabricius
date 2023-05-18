@@ -50,16 +50,17 @@
     }
 }
 
-
-#main_talleres{
-    .caja_txt_tall{
-        text-align: center;
-        h2{
-            width: 100%;
-            padding: 10px 80px 10px 80px;
-        }
-        img{
-            width: 200%;
+@media (max-width: 576px){
+    #main_talleres{
+        .caja_txt_tall{
+            text-align: center;
+            h2{
+                width: 100%;
+                padding: 10px 80px 10px 80px;
+            }
+            img{
+                width: 200%;
+            }
         }
     }
 }

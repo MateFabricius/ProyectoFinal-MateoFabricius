@@ -315,17 +315,18 @@ footer .display_redes {
   border: solid 2px rgb(93, 38, 40);
 }
 
-#main_talleres .caja_txt_tall {
-  text-align: center;
+@media (max-width: 576px) {
+  #main_talleres .caja_txt_tall {
+    text-align: center;
+  }
+  #main_talleres .caja_txt_tall h2 {
+    width: 100%;
+    padding: 10px 80px 10px 80px;
+  }
+  #main_talleres .caja_txt_tall img {
+    width: 200%;
+  }
 }
-#main_talleres .caja_txt_tall h2 {
-  width: 100%;
-  padding: 10px 80px 10px 80px;
-}
-#main_talleres .caja_txt_tall img {
-  width: 200%;
-}
-
 #main_envios {
   display: grid;
   grid-template-columns: 1fr 1fr;
