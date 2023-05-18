@@ -1,11 +1,10 @@
+/*Style footer*/
+
 footer{
     background-color: rgb(247, 232, 217);
     border-top: solid 2px rgb(93, 38, 40);
-    display: flex;
-    flex-direction: column;
     height: 150px;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flex_centrado;
     ul{
         list-style: none;
         display: flex;

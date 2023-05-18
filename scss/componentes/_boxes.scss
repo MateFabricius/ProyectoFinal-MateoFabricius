@@ -1,3 +1,5 @@
+/*Main de Boxes*/
+
 #main_boxes{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -38,9 +40,7 @@
         justify-self: start;
         margin-top: 25px;
         margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %flex_centrado;
         border: solid 2px rgb(93, 38, 40);
         width: 60%;
         p{
@@ -49,7 +49,7 @@
         }
     }
     div h2{
-        text-decoration: underline;
+        text-decoration: map-get($textos, decosi);
     }
     h3{
         grid-area: h3b;

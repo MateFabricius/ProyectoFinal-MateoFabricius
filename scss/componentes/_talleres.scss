@@ -1,3 +1,5 @@
+/*Main de Talleres*/
+
 #main_talleres{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -10,8 +12,7 @@
         grid-area: h1t;
         background-color: rgb(247, 232, 217);
         border-bottom: solid 2px rgb(93, 38, 40);
-        display: flex;
-        justify-content: center;
+        @extend %flex_centrado;
         h1{
             text-align: center;
             background-color: rgb(233, 195, 174);
@@ -23,9 +24,7 @@
     .caja_txt_tall{
         grid-area: txttall;
         justify-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend %flex_centrado;
         width: 50%;
         margin-bottom: 30px;
         h2{
@@ -49,6 +48,8 @@
         }
     }
 }
+
+/*Vista Mobile Talleres*/ 
 
 @media (max-width: 576px){
     #main_talleres{

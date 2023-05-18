@@ -1,7 +1,7 @@
+/*Style Header*/
+
 header{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    @extend %flex_centrado;
     nav{
         ul{
             padding-left: 0px;

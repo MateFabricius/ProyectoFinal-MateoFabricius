@@ -1,14 +1,25 @@
+#main_talleres .caja_txt_tall, #main_talleres .caja_h1t, #main_boxes .box2, #main_index .caja3_texto, #main_index .caja2_texto, #main_index .caja1_texto, footer, header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_talleres .caja_txt_tall, #main_talleres .caja_h1t, #main_boxes .box2, #main_index .caja3_texto, #main_index .caja2_texto, #main_index .caja1_texto, footer, header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Style Body*/
 body {
   color: rgb(93, 38, 40);
   background-color: rgb(247, 232, 217);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
+/*Style Header*/
 header nav ul {
   padding-left: 0px;
   display: flex;
@@ -33,14 +44,11 @@ header nav ul li a {
     width: 100%;
   }
 }
+/*Style footer*/
 footer {
   background-color: rgb(247, 232, 217);
   border-top: solid 2px rgb(93, 38, 40);
-  display: flex;
-  flex-direction: column;
   height: 150px;
-  justify-content: space-around;
-  align-items: center;
 }
 footer ul {
   list-style: none;
@@ -56,6 +64,7 @@ footer .display_redes {
   align-items: center;
 }
 
+/*Main de Index*/
 #main_index {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -90,9 +99,6 @@ footer .display_redes {
   width: 600px;
   justify-self: end;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 #main_index .caja1_texto h2 {
   text-decoration: underline;
@@ -107,10 +113,6 @@ footer .display_redes {
   height: 500px;
   width: 600px;
   justify-self: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 #main_index .caja2_texto h2 {
   text-decoration: underline;
@@ -128,16 +130,11 @@ footer .display_redes {
   height: 500px;
   width: 600px;
   justify-self: end;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 #main_index .caja3_texto h2 {
   text-decoration: underline;
 }
 
-/*Vista Mobile Index*/
 @media (max-width: 576px) {
   #main_index {
     grid-template-columns: 1fr;
@@ -165,6 +162,7 @@ footer .display_redes {
     width: 100%;
   }
 }
+/*Main de Boxes*/
 #main_boxes {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -202,9 +200,6 @@ footer .display_redes {
   justify-self: start;
   margin-top: 25px;
   margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border: solid 2px rgb(93, 38, 40);
   width: 60%;
 }
@@ -265,6 +260,7 @@ footer .display_redes {
     text-align: center;
   }
 }
+/*Main de Talleres*/
 #main_talleres {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -276,8 +272,6 @@ footer .display_redes {
   grid-area: h1t;
   background-color: rgb(247, 232, 217);
   border-bottom: solid 2px rgb(93, 38, 40);
-  display: flex;
-  justify-content: center;
 }
 #main_talleres .caja_h1t h1 {
   text-align: center;
@@ -289,9 +283,6 @@ footer .display_redes {
 #main_talleres .caja_txt_tall {
   grid-area: txttall;
   justify-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 50%;
   margin-bottom: 30px;
 }
@@ -315,6 +306,7 @@ footer .display_redes {
   border: solid 2px rgb(93, 38, 40);
 }
 
+/*Vista Mobile Talleres*/
 @media (max-width: 576px) {
   #main_talleres .caja_txt_tall {
     text-align: center;
@@ -327,6 +319,7 @@ footer .display_redes {
     width: 200%;
   }
 }
+/*Main de Envios*/
 #main_envios {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -380,6 +373,7 @@ footer .display_redes {
   margin: 15px;
 }
 
+/*Vista Mobile Index*/
 @media (max-width: 576px) {
   #main_envios .caja_map {
     flex-direction: column;
@@ -393,6 +387,7 @@ footer .display_redes {
     margin: 10px;
   }
 }
+/*Main de contacto*/
 #main_contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
