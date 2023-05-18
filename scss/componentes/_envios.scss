@@ -54,3 +54,19 @@
         }
     }
 }
+
+@media (max-width: 576px){
+    #main_envios{
+        .caja_map{
+            flex-direction: column;
+            width: 95%;
+            div{
+                width: 100%;
+            }
+            iframe{
+                width: 100%;
+                margin: 10px;
+            }
+        }
+    }
+}

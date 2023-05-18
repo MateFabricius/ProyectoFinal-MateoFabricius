@@ -149,6 +149,7 @@ footer .display_redes {
     width: auto;
   }
   #main_index .caja1_texto {
+    text-align: center;
     width: fit-content;
     justify-self: center;
   }
@@ -314,6 +315,17 @@ footer .display_redes {
   border: solid 2px rgb(93, 38, 40);
 }
 
+#main_talleres .caja_txt_tall {
+  text-align: center;
+}
+#main_talleres .caja_txt_tall h2 {
+  width: 100%;
+  padding: 10px 80px 10px 80px;
+}
+#main_talleres .caja_txt_tall img {
+  width: 200%;
+}
+
 #main_envios {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -367,6 +379,19 @@ footer .display_redes {
   margin: 15px;
 }
 
+@media (max-width: 576px) {
+  #main_envios .caja_map {
+    flex-direction: column;
+    width: 95%;
+  }
+  #main_envios .caja_map div {
+    width: 100%;
+  }
+  #main_envios .caja_map iframe {
+    width: 100%;
+    margin: 10px;
+  }
+}
 #main_contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
