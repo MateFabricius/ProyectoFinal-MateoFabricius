@@ -1,17 +1,17 @@
 /*Style footer*/
 
 footer{
-    background-color: rgb(247, 232, 217);
+    background-color: map-get($textos, c3);
     border-top: solid 2px rgb(93, 38, 40);
     height: 150px;
     @extend %flex_centrado;
     ul{
-        list-style: none;
+        list-style: map-get($textos, decono);
         display: flex;
         gap: 20px;
     }
     p{
-        color: rgb(93, 38, 40);
+        color: map-get($textos, c1);
         font-size: large;
     }
     .display_redes{

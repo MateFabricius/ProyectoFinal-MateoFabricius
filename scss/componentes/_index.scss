@@ -10,16 +10,16 @@
       "txt1 img1"
       "img2 txt2"
       "txt3 img3"; 
-    background-color: rgb(233, 195, 174);
+      background-color: map-get($textos, c2);
     .caja_h1{
         grid-area: h1;
-        background-color: rgb(247, 232, 217);
+        background-color: map-get($textos, c3);
         border-bottom: solid 2px rgb(93, 38, 40);
         display: flex;
         justify-content: center;
         h1{
             text-align: center;
-            background-color: rgb(233, 195, 174);
+            background-color: map-get($textos, c2);
             border: dashed 3px rgb(93, 38, 40);
             padding: 10px;
             width: 65%; 
@@ -32,7 +32,7 @@
     }
     .caja1_texto{
         grid-area: txt1;
-        background-color:rgb(247, 232, 217);
+        background-color: map-get($textos, c3);
         height: 500px;
         width: 600px;
         justify-self: end;
@@ -49,7 +49,7 @@
     
     .caja2_texto{
         grid-area: txt2;
-        background-color:rgb(247, 232, 217);
+        background-color: map-get($textos, c3);
         height: 500px;
         width: 600px;
         justify-self: start;
@@ -67,7 +67,7 @@
     }
     .caja3_texto{
         grid-area: txt3;
-        background-color:rgb(247, 232, 217);
+        background-color: map-get($textos, c3);
         height: 500px;
         width: 600px;
         justify-self: end;
@@ -94,7 +94,7 @@
         "img2"
         "txt3"
         "img3";
-        background-color: rgb(247, 232, 217);
+        background-color: map-get($textos, c3);
         .caja_h1{
             width: auto;
         }

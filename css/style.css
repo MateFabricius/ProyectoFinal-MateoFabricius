@@ -185,6 +185,7 @@ footer .display_redes {
   width: 65%;
 }
 #main_boxes .box1 {
+  background-color: rgb(233, 195, 174);
   grid-area: b1;
   justify-self: end;
   margin-top: 25px;
@@ -196,6 +197,7 @@ footer .display_redes {
   width: 60%;
 }
 #main_boxes .box2 {
+  background-color: rgb(233, 195, 174);
   grid-area: b2;
   justify-self: start;
   margin-top: 25px;
@@ -271,12 +273,12 @@ footer .display_redes {
 #main_talleres .caja_h1t {
   grid-area: h1t;
   background-color: rgb(247, 232, 217);
-  border-bottom: solid 2px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
 }
 #main_talleres .caja_h1t h1 {
   text-align: center;
   background-color: rgb(233, 195, 174);
-  border: dashed 3px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
   padding: 10px;
   width: 65%;
 }
@@ -290,20 +292,20 @@ footer .display_redes {
   text-decoration: none;
   text-align: center;
   background-color: rgb(233, 195, 174);
-  border: solid 2px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
   padding: 10px 180px 10px 180px;
 }
 #main_talleres .caja_txt_tall a {
   text-decoration: none;
   background-color: rgb(233, 195, 174);
-  color: rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
   padding: 10px 12px 12px 13px;
   border-radius: 10px;
   margin: 15px;
 }
 #main_talleres .caja_txt_tall img {
   margin: 10px;
-  border: solid 2px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
 }
 
 /*Vista Mobile Talleres*/
@@ -330,14 +332,14 @@ footer .display_redes {
 #main_envios .caja_h1e {
   grid-area: h1e;
   background-color: rgb(247, 232, 217);
-  border-bottom: solid 2px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
   display: flex;
   justify-content: center;
 }
 #main_envios .caja_h1e h1 {
   text-align: center;
   background-color: rgb(233, 195, 174);
-  border: dashed 3px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
   padding: 10px;
   width: 65%;
 }
@@ -353,7 +355,7 @@ footer .display_redes {
   grid-area: map;
   justify-self: center;
   background-color: rgb(233, 195, 174);
-  border: solid 2px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -398,14 +400,14 @@ footer .display_redes {
 #main_contacto .caja_h1c {
   grid-area: h1c;
   background-color: rgb(247, 232, 217);
-  border-bottom: solid 2px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
   display: flex;
   justify-content: center;
 }
 #main_contacto .caja_h1c h1 {
   text-align: center;
   background-color: rgb(233, 195, 174);
-  border: dashed 3px rgb(93, 38, 40);
+  background-color: rgb(93, 38, 40);
   padding: 10px;
   width: 65%;
 }

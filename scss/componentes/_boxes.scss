@@ -12,19 +12,20 @@
       "h3b h3b"; 
       .caja_h1b{
         grid-area: h1b;
-        background-color: rgb(247, 232, 217);
+        background-color: map-get($textos, c3);
         border-bottom: solid 2px rgb(93, 38, 40);
         display: flex;
         justify-content: center;
         h1{
             text-align: center;
-            background-color: rgb(233, 195, 174);
+            background-color: map-get($textos, c2);
             border: dashed 3px rgb(93, 38, 40);
             padding: 10px;
             width: 65%;
         }
     }
     .box1{
+        background-color: map-get($textos, c2);
         grid-area: b1;
         justify-self: end;
         margin-top: 25px;
@@ -36,6 +37,7 @@
         width: 60%;
     }
     .box2{
+        background-color: map-get($textos, c2);
         grid-area: b2;
         justify-self: start;
         margin-top: 25px;
@@ -55,7 +57,7 @@
         grid-area: h3b;
         justify-self: center;
         align-self: center;
-        background-color: rgb(233, 195, 174);
+        background-color: map-get($textos, c2);
         text-align: center;
         border: dashed rgb(93, 38, 40);
         padding: 10px;
@@ -74,7 +76,7 @@
         "b1"
         "b2"
         "h3b";
-        background-color: rgb(247, 232, 217);
+        background-color: map-get($textos, c3);
         .caja_h1b{
             width: 100%;
         }

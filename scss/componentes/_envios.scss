@@ -11,14 +11,14 @@
       "map map"; 
     .caja_h1e{
         grid-area: h1e;
-        background-color: rgb(247, 232, 217);
-        border-bottom: solid 2px rgb(93, 38, 40);
+        background-color: map-get($textos, c3);
+        background-color: map-get($textos, c1);
         display: flex;
         justify-content: center;
         h1{
             text-align: center;
-            background-color: rgb(233, 195, 174);
-            border: dashed 3px rgb(93, 38, 40);
+            background-color: map-get($textos, c2);
+            background-color: map-get($textos, c1);
             padding: 10px;
             width: 65%;
         
@@ -29,14 +29,14 @@
         justify-self: center;
         text-align: center;
         h2{
-            text-decoration: underline;
+            text-decoration: map-get($textos, decosi);
             }
         }
     .caja_map{
         grid-area: map;
         justify-self: center;
-        background-color: rgb(233, 195, 174);
-        border: solid 2px rgb(93, 38, 40);
+        background-color: map-get($textos, c2);
+        background-color: map-get($textos, c1);
         display: flex;
         align-items: center;
         margin-bottom: 30px;
@@ -48,7 +48,7 @@
             width: 500px;
             text-align: center;
             h3{
-                text-decoration: underline;
+                text-decoration: map-get($textos, decosi);
             }
             iframe{
                 margin: 15px;

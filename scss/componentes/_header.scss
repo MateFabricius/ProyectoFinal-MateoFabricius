@@ -10,11 +10,11 @@ header{
             justify-content: space-around;
             gap: 40px;
             li{
-                list-style: none;
+                list-style: map-get($textos, decono);
                 a{
                     text-decoration: none;
-                    background-color: rgb(233, 195, 174);
-                    color: rgb(93, 38, 40);
+                    background-color: map-get($textos, c2);
+                    color: map-get($textos, c1);
                     padding: 10px 12px 12px 13px;
                     border-radius: 10px;
                 }  
