@@ -3,7 +3,7 @@
 #main_talleres{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.3fr 1.5fr; 
+    grid-template-rows: auto 1.5fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "h1t h1t"
@@ -11,14 +11,15 @@
     .caja_h1t{
         grid-area: h1t;
         background-color: map-get($textos, c3);
-        background-color: map-get($textos, c1);
-        @extend %flex_centrado;
+        border-bottom: solid 2px rgb(93, 38, 40);
+        display: flex;
+        justify-content: center;
         h1{
             text-align: center;
             background-color: map-get($textos, c2);
-            background-color: map-get($textos, c1);
+            border: dashed 3px rgb(93, 38, 40);
             padding: 10px;
-            width: 65%;
+            width: 65%; 
         }
     }
     .caja_txt_tall{
@@ -31,13 +32,13 @@
             text-decoration: none;
             text-align: center;
             background-color: map-get($textos, c2);
-            background-color: map-get($textos, c1);
+            background-color: map-get($textos, c2);
             padding: 10px 180px 10px 180px;
         }
         a{
             text-decoration: none;
             background-color: map-get($textos, c2);
-            background-color: map-get($textos, c1);
+            background-color: map-get($textos, c2);
             padding: 10px 12px 12px 13px;
             border-radius: 10px;
             margin: 15px;

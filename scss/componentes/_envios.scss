@@ -12,15 +12,15 @@
     .caja_h1e{
         grid-area: h1e;
         background-color: map-get($textos, c3);
-        background-color: map-get($textos, c1);
+        border-bottom: solid 2px rgb(93, 38, 40);
         display: flex;
         justify-content: center;
         h1{
             text-align: center;
             background-color: map-get($textos, c2);
-            background-color: map-get($textos, c1);
+            border: dashed 3px rgb(93, 38, 40);
             padding: 10px;
-            width: 65%;
+            width: 65%; 
         
         }
     }
@@ -34,9 +34,10 @@
         }
     .caja_map{
         grid-area: map;
+        border: solid 2px rgb(93, 38, 40);
         justify-self: center;
         background-color: map-get($textos, c2);
-        background-color: map-get($textos, c1);
+        background-color: map-get($textos, c2);
         display: flex;
         align-items: center;
         margin-bottom: 30px;

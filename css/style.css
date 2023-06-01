@@ -1,11 +1,11 @@
-#main_talleres .caja_txt_tall, #main_talleres .caja_h1t, #main_boxes .box2, #main_index .caja3_texto, #main_index .caja2_texto, #main_index .caja1_texto, footer, header {
+#main_talleres .caja_txt_tall, #main_boxes .box2, #main_index .caja3_texto, #main_index .caja2_texto, #main_index .caja1_texto, footer, header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#main_talleres .caja_txt_tall, #main_talleres .caja_h1t, #main_boxes .box2, #main_index .caja3_texto, #main_index .caja2_texto, #main_index .caja1_texto, footer, header {
+#main_talleres .caja_txt_tall, #main_boxes .box2, #main_index .caja3_texto, #main_index .caja2_texto, #main_index .caja1_texto, footer, header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,19 +266,21 @@ footer .display_redes {
 #main_talleres {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.3fr 1.5fr;
+  grid-template-rows: auto 1.5fr;
   gap: 0px 0px;
   grid-template-areas: "h1t h1t" "txttall txttall";
 }
 #main_talleres .caja_h1t {
   grid-area: h1t;
   background-color: rgb(247, 232, 217);
-  background-color: rgb(93, 38, 40);
+  border-bottom: solid 2px rgb(93, 38, 40);
+  display: flex;
+  justify-content: center;
 }
 #main_talleres .caja_h1t h1 {
   text-align: center;
   background-color: rgb(233, 195, 174);
-  background-color: rgb(93, 38, 40);
+  border: dashed 3px rgb(93, 38, 40);
   padding: 10px;
   width: 65%;
 }
@@ -292,13 +294,13 @@ footer .display_redes {
   text-decoration: none;
   text-align: center;
   background-color: rgb(233, 195, 174);
-  background-color: rgb(93, 38, 40);
+  background-color: rgb(233, 195, 174);
   padding: 10px 180px 10px 180px;
 }
 #main_talleres .caja_txt_tall a {
   text-decoration: none;
   background-color: rgb(233, 195, 174);
-  background-color: rgb(93, 38, 40);
+  background-color: rgb(233, 195, 174);
   padding: 10px 12px 12px 13px;
   border-radius: 10px;
   margin: 15px;
@@ -332,14 +334,14 @@ footer .display_redes {
 #main_envios .caja_h1e {
   grid-area: h1e;
   background-color: rgb(247, 232, 217);
-  background-color: rgb(93, 38, 40);
+  border-bottom: solid 2px rgb(93, 38, 40);
   display: flex;
   justify-content: center;
 }
 #main_envios .caja_h1e h1 {
   text-align: center;
   background-color: rgb(233, 195, 174);
-  background-color: rgb(93, 38, 40);
+  border: dashed 3px rgb(93, 38, 40);
   padding: 10px;
   width: 65%;
 }
@@ -353,9 +355,10 @@ footer .display_redes {
 }
 #main_envios .caja_map {
   grid-area: map;
+  border: solid 2px rgb(93, 38, 40);
   justify-self: center;
   background-color: rgb(233, 195, 174);
-  background-color: rgb(93, 38, 40);
+  background-color: rgb(233, 195, 174);
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -400,14 +403,14 @@ footer .display_redes {
 #main_contacto .caja_h1c {
   grid-area: h1c;
   background-color: rgb(247, 232, 217);
-  background-color: rgb(93, 38, 40);
+  border-bottom: solid 2px rgb(93, 38, 40);
   display: flex;
   justify-content: center;
 }
 #main_contacto .caja_h1c h1 {
   text-align: center;
   background-color: rgb(233, 195, 174);
-  background-color: rgb(93, 38, 40);
+  border: dashed 3px rgb(93, 38, 40);
   padding: 10px;
   width: 65%;
 }
